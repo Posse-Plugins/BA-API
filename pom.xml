@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.classy</groupId>
-    <artifactId>bossbarapi</artifactId>
-    <version>1.0</version>
+    <artifactId>ba-api</artifactId>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
-    <name>BossBarAPI</name>
+    <name>BA-API</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -92,7 +92,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>me.classy.bossbarapi.BossBarAPI</mainClass>
+                            <mainClass>me.classy.baapi.BAAPI</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -109,7 +109,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/Posse-Plugins/BossBarAPI</url>
+			<url>https://maven.pkg.github.com/Posse-Plugins/BA-API</url>
 		</repository>
 	</distributionManagement>
 </project>

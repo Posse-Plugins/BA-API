@@ -1,4 +1,4 @@
-package me.classy.bossbarapi;
+package me.classy.baapi.utility;
 
 import org.bukkit.ChatColor;
 

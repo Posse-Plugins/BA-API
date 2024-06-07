@@ -1,5 +1,5 @@
-name: BossBarAPI
-description: BossBarAPI
-main: me.classy.bossbarapi.BossBarAPI
+name: BA-API
+description: An API that allows you to sends ActionBar and BossBar in 1.8.X
+main: me.classy.baapi.BAAPI
 version: '${project.version}'
 api-version: 1.8
