@@ -1,0 +1,5 @@
+name: BossBarAPI
+description: BossBarAPI
+main: me.classy.bossbarapi.BossBarAPI
+version: '${project.version}'
+api-version: 1.8
