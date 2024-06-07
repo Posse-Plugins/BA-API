@@ -9,11 +9,11 @@ import java.util.UUID;
 public class BossBar {
     private final UUID uuid;
     private String title;
-    private float health;
+    private double health;
     private String color;
     private String style;
 
-    public BossBar(String title, float health) {
+    public BossBar(String title, double health) {
         this.title = title;
         this.health = health;
         this.uuid = UUID.randomUUID();
@@ -44,7 +44,7 @@ public class BossBar {
         }
     }
 
-    public void updateHealth(Player p, float health) {
+    public void updateHealth(Player p, double health) {
         try {
             this.health = health;
             Object packet = createUpdateHealthPacket(p);

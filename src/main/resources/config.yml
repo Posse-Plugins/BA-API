@@ -5,7 +5,7 @@ actionbar-sendtoall: false # default false
 
 # BossBar
 bossbar-message: "&aHello World"
-bossbar-health: 100 # maximum 100
+bossbar-health: 100 # max 100
 bossbar-color: "purple" # default purple
 bossbar-style: "solid" # default solid
 bossbar-removefromplayer: false # default false

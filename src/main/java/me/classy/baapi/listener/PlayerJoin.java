@@ -26,7 +26,7 @@ public class PlayerJoin implements Listener {
 			actionBar.sendToAll();
 		}
 		
-		BossBar bossBar = new BossBar(BAAPI.getInstance().getConfig().getString(Util.setColor("bossbar-message")), BAAPI.getInstance().getConfig().get("bossbar-health"));
+		BossBar bossBar = new BossBar(BAAPI.getInstance().getConfig().getString(Util.setColor("bossbar-message")), BAAPI.getInstance().getConfig().getDouble("bossbar-health"));
 		bossBar.setColor(BAAPI.getInstance().getConfig().getString("bossbar-color").toUpperCase());
 		bossBar.setStyle(BAAPI.getInstance().getConfig().getString("bossbar-style").toUpperCase());
 		if (BAAPI.getInstance().getConfig().getBoolean("bossbar-removefromplayer") == true) {
