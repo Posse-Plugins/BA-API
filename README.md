@@ -36,6 +36,11 @@ bossBar.removeFromPlayer(p); // Remove from the player
 ActionBar actionBar = new ActionBar("Hello World", 2000); // Hello World for 100 seconds
 actionBar.sendToPlayer(p); // Send the actionbar to a specific player
 actionBar.sendToAll(); // Send the actionbar to all the players online on the server
+
+// TitleAPI
+Title title = new Title();
+title.sentToPlayer(p, "Hello World (Title)", "Hello World (Subtitle)", 10, 70, 20); // Hello World (title) and Hello World (subtitle) for 3.5 seconds (70 ticks)
+title.sentToAll("Hello World (Title)", "Hello World (Subtitle)", 10, 70, 20); // Hello World (title) and Hello World (subtitle) for 3.5 seconds (70 ticks) to all players
 ```
 ## Tested Versions
 
