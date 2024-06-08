@@ -23,17 +23,25 @@ jobs:
 
     - name: Cache Maven packages
       uses: actions/cache@v4.0.2
-      
       with:
         path: ~/.m2/repository
         key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
         restore-keys: |
           ${{ runner.os }}-maven-
 
+    - name: Set up GPG
+      env:
+        GPG_KEY: ${{ secrets.GPG_KEY }}
+        GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+      run: |
+        echo "$GPG_KEY" | base64 --decode | gpg --batch --import
+        gpg --batch --pinentry-mode loopback --passphrase "$GPG_PASSPHRASE" --export-secret-keys > ~/.gnupg/secring.gpg
+        gpg --list-keys
+
     - name: Build with Maven
-      run: mvn clean install --settings .github/settings.xml
-    
+      run: mvn clean install -Dgpg.passphrase=${{ secrets.GPG_PASSPHRASE }} --settings .github/settings.xml
+
     - name: Publish
-      run: mvn deploy -s .github/settings.xml
+      run: mvn deploy -Dgpg.passphrase=${{ secrets.GPG_PASSPHRASE }} -s .github/settings.xml
       env:
         GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
