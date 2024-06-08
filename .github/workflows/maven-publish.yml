@@ -32,7 +32,7 @@ jobs:
     - name: Set up GPG
       env:
         GPG_KEY: ${{ secrets.GPG_KEY }}
-        GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+        GPG_PASSPHRASE: ${{ secrets.GPG_PHRASE }}
       run: |
         echo "$GPG_KEY" | base64 --decode | gpg --batch --import
         gpg --batch --pinentry-mode loopback --passphrase "$GPG_PASSPHRASE" --export-secret-keys > ~/.gnupg/secring.gpg
