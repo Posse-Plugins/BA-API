@@ -4,7 +4,7 @@
 
     <groupId>me.classy</groupId>
     <artifactId>ba-api</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
     <packaging>jar</packaging>
 
     <name>BA-API</name>
