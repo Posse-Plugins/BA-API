@@ -1,6 +1,6 @@
 # BA-API
 
-BossBarAPI & ActionBarAPI for 1.8.X (Very Lightweight)
+BossBarAPI, ActionBarAPI & TitleAPI for 1.8.X (Very Lightweight)
 
 ## Maven Dependency
 ```xml
