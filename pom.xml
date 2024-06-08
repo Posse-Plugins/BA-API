@@ -154,7 +154,6 @@
 						</goals>
 						<configuration>
 							<keyname>${{ secrets.GPG_KEY }}</keyname>
-							<passphraseServerId>${{ secrets.GPG_PHRASH }}</passphraseServerId>
 							<gpgArguments>
 								<arg>--pinentry-mode</arg>
 								<arg>loopback</arg>
