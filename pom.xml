@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <name>BA-API</name>
-	<description>An API that allows you to send Bossbar, Actionbar, Title & Subtitle in Minecraft 1.8.8.</description>
+	<description>An API that allows you to send Bossbar, Actionbar, Title &amp; Subtitle in Minecraft 1.8.8.</description>
 	<url>https://github.com/Posse-Plugins/BA-API</url>
 
     <properties>
