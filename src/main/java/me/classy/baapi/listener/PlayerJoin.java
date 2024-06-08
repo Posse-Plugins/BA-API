@@ -5,6 +5,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.server.ServerListPingEvent;
+import org.bukkit.scheduler.BukkitRunnable;
 
 import me.classy.baapi.BAAPI;
 import me.classy.baapi.actionbarapi.ActionBar;
@@ -34,6 +35,12 @@ public class PlayerJoin implements Listener {
 		} else {
 			bossBar.sendToPlayer(p);
 		}
+		
+		new BukkitRunnable() {
+			public void run() {
+				BAAPI.getInstance().scoreBoard();
+			}
+		}.runTaskTimer(BAAPI.getInstance(), 20, 20);
     }
 
     @EventHandler

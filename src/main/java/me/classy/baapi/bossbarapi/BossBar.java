@@ -1,6 +1,7 @@
 package me.classy.baapi.bossbarapi;
 
 import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
+import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
 import java.lang.reflect.Constructor;
@@ -43,6 +44,12 @@ public class BossBar {
             e.printStackTrace();
         }
     }
+	
+	public void sendToAll() {
+		for (Player p : Bukkit.getServer().getOnlinePlayers()) {
+			sendToPlayer(p);
+		}
+	}
 
     public void updateHealth(Player p, double health) {
         try {

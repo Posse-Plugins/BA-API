@@ -1,6 +1,6 @@
-# BossBar API
+# BA-API
 
-BossBarAPI for 1.8.X (Very Lightweight)
+BossBarAPI & ActionBarAPI for 1.8.X (Very Lightweight)
 
 ## Maven
 ```xml

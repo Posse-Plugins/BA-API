@@ -1,11 +1,15 @@
 package me.classy.baapi;
 
 import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.scoreboard.*;
 
 import me.classy.baapi.utility.Util;
 import me.classy.baapi.listener.PlayerJoin;
+
+import java.util.List;
 
 public class BAAPI extends JavaPlugin {
 	
@@ -15,6 +19,7 @@ public class BAAPI extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		loadConfig();
+		scoreBoard();
 		registerListeners();
 		
 		getLogger().info(Util.setColor("&e&m----------------------------------"));
@@ -38,6 +43,28 @@ public class BAAPI extends JavaPlugin {
 	private void registerListeners() {
 		PluginManager pm = getServer().getPluginManager();
 		pm.registerEvents(new PlayerJoin(), this);
+	}
+	
+	public void scoreBoard() {
+		String title = getConfig().getString(Util.setColor("scoreboard.title"), Util.setColor("&e&lBA-API"));
+		List<String> scores = getConfig().getStringList(Util.setColor("scoreboard.scores"));
+		
+		ScoreboardManager scoreboardManager = Bukkit.getScoreboardManager();
+		Scoreboard scoreboard = scoreboardManager.getNewScoreboard();
+		Objective objective = scoreboard.registerNewObjective("scoreboard", "dummy");
+		objective.setDisplaySlot(DisplaySlot.SIDEBAR);
+		objective.setDisplayName(title);
+		
+		int scoreValue = scores.size();
+		for (String line : scores) {
+			Score score = objective.getScore(line);
+			score.setScore(scoreValue);
+			scoreValue--;
+		}
+		
+		for (Player p : Bukkit.getServer().getOnlinePlayers()) {
+			p.setScoreboard(scoreboard);
+		}
 	}
 	
 	public static String getPrefix() {
