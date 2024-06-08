@@ -1,10 +1,5 @@
 <settings>
   <servers>
-    <server>
-      <id>github</id>
-      <username>${{ github.ACTOR }}</username>
-      <password>${env.GITHUB_TOKEN}</password>
-    </server>
 	  <server>
 		  <id>ossrh</id>
 		  <username>${{ secrets.OSSRH_USER }}</username>
