@@ -32,16 +32,19 @@ jobs:
     - name: Set up GPG
       env:
         GPG_KEY: ${{ secrets.GPG_KEY }}
-        GPG_PASSPHRASE: ${{ secrets.GPG_PHRASE }}
+        GPG_PHRASH: ${{ secrets.GPG_PHRASH }}
       run: |
         echo "$GPG_KEY" | base64 --decode | gpg --batch --import
-        gpg --batch --pinentry-mode loopback --passphrase "$GPG_PASSPHRASE" --export-secret-keys > ~/.gnupg/secring.gpg
-        gpg --list-keys
+        echo "use-agent" >> ~/.gnupg/gpg.conf
+        echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
+        echo RELOADAGENT | gpg-connect-agent
 
     - name: Build with Maven
-      run: mvn clean install -Dgpg.passphrase=${{ secrets.GPG_PASSPHRASE }} --settings .github/settings.xml
+      run: |
+        mvn clean install -Dgpg.passphrase=${{ secrets.GPG_PHRASH }} --settings .github/settings.xml
 
     - name: Publish
-      run: mvn deploy -Dgpg.passphrase=${{ secrets.GPG_PASSPHRASE }} -s .github/settings.xml
+      run: |
+        mvn deploy -Dgpg.passphrase=${{ secrets.GPG_PHRASH }} -s .github/settings.xml
       env:
         GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
