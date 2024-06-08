@@ -3,3 +3,12 @@ description: An API that allows you to sends ActionBar and BossBar in 1.8.X
 main: me.classy.baapi.BAAPI
 version: '${project.version}'
 api-version: 1.8
+commands:
+  sendtitle:
+    description: "Send a title message to one or all the player in the server."
+    usage: "/sendtitle <message> <player> OR /sendtitle <message> all"
+    aliases: st
+  sendsubtitle:
+    description: "Send a subtitle message to one or all the player in the server."
+    usage: "/sendsubtitle <message> <player> OR /sendsubtitle <message> all"
+    aliases: sst

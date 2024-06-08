@@ -8,6 +8,8 @@ import org.bukkit.scoreboard.*;
 
 import me.classy.baapi.utility.Util;
 import me.classy.baapi.listener.PlayerJoin;
+import me.classy.baapi.commands.TitleCommand;
+import me.classy.baapi.commands.SubtitleCommand;
 
 import java.util.List;
 
@@ -21,6 +23,7 @@ public class BAAPI extends JavaPlugin {
 		loadConfig();
 		scoreBoard();
 		registerListeners();
+		registerCommands();
 		
 		getLogger().info(Util.setColor("&e&m----------------------------------"));
 		getLogger().info(getPrefix() + Util.setColor("&ePlugin has been enabled!"));
@@ -43,6 +46,11 @@ public class BAAPI extends JavaPlugin {
 	private void registerListeners() {
 		PluginManager pm = getServer().getPluginManager();
 		pm.registerEvents(new PlayerJoin(), this);
+	}
+	
+	private void registerCommands() {
+		getCommand("sendtitle").setExecutor(new TitleCommand());
+		getCommand("sendsubtitle").setExecutor(new SubtitleCommand());
 	}
 	
 	public void scoreBoard() {

@@ -33,7 +33,7 @@ jobs:
     - name: Build with Maven
       run: mvn clean install --settings .github/settings.xml
     
-    - name: Publish to GitHub Packages
+    - name: Publish
       run: mvn deploy -s .github/settings.xml
       env:
         GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
