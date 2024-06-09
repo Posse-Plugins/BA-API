@@ -2,7 +2,7 @@
   <servers>
     <server>
       <id>github</id>
-      <username>${ github.ACTOR }</username>
+      <username>${{ github.ACTOR }}</username>
       <password>${{ secrets.REPO_TOKEN }}</password>
     </server>
   </servers>
