@@ -7,7 +7,7 @@ BossBarAPI, ActionBarAPI & TitleAPI for 1.8.X (Very Lightweight)
 <repositories>
 	<repository>
 		<id>github</id>
-    <name>GitHub Packages</name>
+                <name>GitHub Packages</name>
 		<url>https://maven.pkg.github.com/Posse-Plugins/BA-API</url>
 	</repository>
 </repositories>
@@ -17,7 +17,7 @@ BossBarAPI, ActionBarAPI & TitleAPI for 1.8.X (Very Lightweight)
 <dependency>
 	<groupId>me.classy</groupId>
 	<artifactId>ba-api</artifactId>
-	<version>1.2</version>
+	<version>1.2.1</version>
 </dependency>
 ```
 
