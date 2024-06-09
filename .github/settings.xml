@@ -1,21 +1,32 @@
-<settings>
-  <servers>
-	  <server>
-		  <id>ossrh</id>
-		  <username>${{ secrets.OSSRH_USER }}</username>
-		  <password>${{ secrets.OSSRH_TOKEN }}</password>
-	  </server>
-  </servers>
-  <profiles>
-	  <profile>
-		  <id>ossrh</id>
-		  <activation>
-			  <activeByDefault>true</activeByDefault>
-		  </activation>
-		  <properties>
-			  <gpg.executable>gpg2</gpg.executable>
-			  <gpg.passphrase>${{ secrets.GPG_PHRASH }}</gpg.passphrase>
-		  </properties>
-	  </profile>
-  </profiles>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+	http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+	<activeProfiles>
+		<activeProfile>github</activeProfile>
+	</activeProfiles>
+
+	<profiles>
+		<profile>
+			<id>github</id>
+			<repositories>
+				<repository>
+					<id>github</id>
+					<url>https://maven.pkg.github.com/Posse-Plugins/BA-API</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
+
+	<servers>
+		<server>
+			<id>github</id>
+			<username>${{ github.ACTOR }}</username>
+			<password>${{ secrets.REPO_TOKEN }}</password>
+		</server>
+	</servers>
 </settings>

@@ -29,35 +29,12 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-maven-
 
-    - name: Decode and import GPG key
-      env:
-        GPG_KEY: ${{ secrets.GPG_KEY }}
-      run: |
-        echo "Decoding and importing GPG key..."
-        echo "$GPG_KEY" | base64 --decode > private.key
-        gpg --batch --import private.key
-        rm private.key
-        gpg --list-keys
-        gpg --list-secret-keys
-
-    - name: Configure GPG
-      run: |
-        mkdir -p ~/.gnupg
-        echo "use-agent" >> ~/.gnupg/gpg.conf
-        echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
-        echo RELOADAGENT | gpg-connect-agent
-        gpg --list-keys
-        gpg --list-secret-keys
-
     - name: Build with Maven
-      env:
-        GPG_PHRASH: ${{ secrets.GPG_PHRASH }}
       run: |
-        mvn clean install -Dgpg.passphrase=${{ secrets.GPG_PHRASH }} --settings .github/settings.xml
+        mvn clean install --settings .github/settings.xml
 
     - name: Publish
       env:
-        GPG_PHRASH: ${{ secrets.GPG_PHRASH }}
         GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
       run: |
-        mvn deploy -Dgpg.passphrase=${{ secrets.GPG_PHRASH }} -s .github/settings.xml
+        mvn deploy -s .github/settings.xml
