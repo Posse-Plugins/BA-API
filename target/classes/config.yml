@@ -1,0 +1,29 @@
+# ActionBar
+actionbar-message: "&aHello World"
+actionbar-duration: 200 # in ticks
+actionbar-sendtoall: false # default false
+
+# BossBar
+bossbar-message: "&aHello World"
+bossbar-health: 100 # max 100
+bossbar-color: "purple" # default purple
+bossbar-style: "solid" # default solid
+bossbar-removefromplayer: false # default false
+
+# MOTD for the server
+motd: "Hello World" # change it
+
+# Scoreboard
+scoreboard:
+  title: "&e&lTESTBOARD"
+  scores:
+    - "&aLine 1"
+    - "&aLine 2"
+    - "&aLine 3"
+    - "&aLine 4"
+    - "&aLine 5"
+    - "&aLine 6"
+    - "&aLine 7"
+    - "&aLine 8"
+    - "&aLine 9"
+    - "&aLine 10"

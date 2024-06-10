@@ -4,20 +4,18 @@ BossBarAPI, ActionBarAPI & TitleAPI for 1.8.X (Very Lightweight)
 
 ## Maven Dependency
 ```xml
-<repositories>
-	<repository>
-		<id>github</id>
-                <name>GitHub Packages</name>
-		<url>https://maven.pkg.github.com/Posse-Plugins/BA-API</url>
-	</repository>
-</repositories>
+<repository>
+	<id>github</id>
+    <name>GitHub Packages</name>
+	<url>https://maven.pkg.github.com/Posse-Plugins/BA-API</url>
+</repository>
 ```
 
 ```xml
 <dependency>
 	<groupId>me.classy</groupId>
 	<artifactId>ba-api</artifactId>
-	<version>1.2.1</version>
+	<version>2.0</version>
 </dependency>
 ```
 
