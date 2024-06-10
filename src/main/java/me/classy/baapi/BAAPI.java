@@ -6,10 +6,14 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scoreboard.*;
 
-import me.classy.baapi.utility.Util;
-import me.classy.baapi.listener.PlayerJoin;
-import me.classy.baapi.commands.TitleCommand;
-import me.classy.baapi.commands.SubtitleCommand;
+import me.classy.baapi.utility.*;
+import me.classy.baapi.holo.*;
+import me.classy.baapi.gui.*;
+import me.classy.baapi.staff.*;
+import me.classy.baapi.rank.*;
+import me.classy.baapi.listener.*;
+import me.classy.baapi.commands.*;
+import me.classy.baapi.commandsapi.*;
 
 import java.util.List;
 
@@ -17,6 +21,9 @@ public class BAAPI extends JavaPlugin {
 	
 	private static BAAPI instance;
 	private static String prefix;
+	private HologramManager hologramManager;
+	private CommandRegistery commandRegistery;
+	private ICommandExecutor iCommandExecutor;
 	
 	@Override
 	public void onEnable() {
@@ -31,6 +38,11 @@ public class BAAPI extends JavaPlugin {
 		getLogger().info(getPrefix() + Util.setColor("&eGitHub: &b&nhttps://github.com/Posse-Plugins/Posse-Moderation"));
 		getLogger().info(getPrefix() + Util.setColor("&eSupport: &b&nhttps://github.com/Posse-Plugins/Posse-Moderation"));
 		getLogger().info(Util.setColor("&e&m----------------------------------"));
+		
+		hologramManager = new HologramManager(this);
+		commandRegistery = new CommandRegistery();
+		iCommandExecutor = new ICommandExecutor(commandRegistery);
+		
 	}
 
 	@Override
@@ -46,11 +58,20 @@ public class BAAPI extends JavaPlugin {
 	private void registerListeners() {
 		PluginManager pm = getServer().getPluginManager();
 		pm.registerEvents(new PlayerJoin(), this);
+		pm.registerEvents(new StaffJoinLeaveEvent(), this);
 	}
 	
 	private void registerCommands() {
 		getCommand("sendtitle").setExecutor(new TitleCommand());
 		getCommand("sendsubtitle").setExecutor(new SubtitleCommand());
+		getCommand("staffchat").setExecutor(new StaffChatCommand());
+        getCommand("staffinfo").setExecutor(new StaffInfoCommand());
+        getCommand("staff").setExecutor(new StaffListCommand());
+        getCommand("togglestaffchat").setExecutor(new ToggleStaffChatCommand());
+		getCommand("donttouch").setExecutor(iCommandExecutor);
+		
+		// Register commands that you created using our API
+		commandRegistery.registerCommand(new ECommand());
 	}
 	
 	public void scoreBoard() {
