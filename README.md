@@ -4,19 +4,37 @@ BossBarAPI, ActionBarAPI & TitleAPI for 1.8.X (Very Lightweight)
 
 ## Maven Dependency
 ```xml
-<repository>
+<repositories>
+    <repository>
 	<id>github</id>
-    <name>GitHub Packages</name>
 	<url>https://maven.pkg.github.com/Posse-Plugins/BA-API</url>
-</repository>
+    </repository>
+</repositories>
 ```
 
 ```xml
-<dependency>
+<dependencies>
+    <dependency>
 	<groupId>me.classy</groupId>
 	<artifactId>ba-api</artifactId>
 	<version>2.1</version>
-</dependency>
+    </dependency>
+</dependencies>
+```
+
+## Gradle Dependency
+```groovy
+repositories {
+	maven {
+		url "https://maven.pkg.github.com/Posse-Plugins/BA-API"
+	}
+}
+```
+
+```groovy
+dependencies {
+	implementation "me.classy:ba-api:2.1"
+}
 ```
 
 ## Usage/Examples

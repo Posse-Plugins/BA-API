@@ -53,7 +53,7 @@
             <id>enginehub-maven</id>
             <url>https://maven.enginehub.org/repo/</url>
         </repository>
-    </repositories>
+	</repositories>
 
     <dependencies>
         <dependency>
