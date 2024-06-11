@@ -80,7 +80,8 @@ If you test it in other versions make a pull request.
 
 ## Authors
 
-- [@ClassyCoder1](https://www.github.com/ClassyCoder1)
+- [@ClassyCoder1](https://github.com/ClassyCoder1)
+- [@vNoobblade](https://github.com/vNoobblade)
 
 ## Credits
-- [@vNoobblade](https://www.github.com/vNoobblade) **for the readme and actionbarapi.**
+- [@vNoobblade](https://github.com/vNoobblade) **for the readme and actionbarapi.**
