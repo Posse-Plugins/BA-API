@@ -4,7 +4,7 @@
 
     <groupId>me.classy</groupId>
     <artifactId>ba-api</artifactId>
-    <version>2.0</version>
+    <version>2.1</version>
     <packaging>jar</packaging>
 
     <name>BA-API</name>
@@ -23,7 +23,7 @@
 			<name>Classy</name>
 			<email>classycoder1@gmail.com</email>
 			<roles>
-				<role>commiter</role>
+				<role>Owner</role>
 			</roles>
 		</developer>
 	</developers>
@@ -52,10 +52,6 @@
         <repository>
             <id>enginehub-maven</id>
             <url>https://maven.enginehub.org/repo/</url>
-        </repository>
-        <repository>
-            <id>citizens-repo</id>
-            <url>https://maven.citizensnpcs.co/repo</url>
         </repository>
     </repositories>
 

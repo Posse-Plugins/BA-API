@@ -9,10 +9,6 @@ import org.bukkit.scoreboard.*;
 import me.classy.baapi.utility.*;
 import me.classy.baapi.holo.*;
 import me.classy.baapi.gui.*;
-import me.classy.baapi.staff.*;
-import me.classy.baapi.rank.*;
-import me.classy.baapi.listener.*;
-import me.classy.baapi.commands.*;
 import me.classy.baapi.commandsapi.*;
 
 import java.util.List;
@@ -29,7 +25,6 @@ public class BAAPI extends JavaPlugin {
 	public void onEnable() {
 		loadConfig();
 		scoreBoard();
-		registerListeners();
 		registerCommands();
 		
 		getLogger().info(Util.setColor("&e&m----------------------------------"));
@@ -55,23 +50,8 @@ public class BAAPI extends JavaPlugin {
 		saveConfig();
 	}
 	
-	private void registerListeners() {
-		PluginManager pm = getServer().getPluginManager();
-		pm.registerEvents(new PlayerJoin(), this);
-		pm.registerEvents(new StaffJoinLeaveEvent(), this);
-	}
-	
 	private void registerCommands() {
-		getCommand("sendtitle").setExecutor(new TitleCommand());
-		getCommand("sendsubtitle").setExecutor(new SubtitleCommand());
-		getCommand("staffchat").setExecutor(new StaffChatCommand());
-        getCommand("staffinfo").setExecutor(new StaffInfoCommand());
-        getCommand("staff").setExecutor(new StaffListCommand());
-        getCommand("togglestaffchat").setExecutor(new ToggleStaffChatCommand());
-		getCommand("donttouch").setExecutor(iCommandExecutor);
-		
-		// Register commands that you created using our API
-		commandRegistery.registerCommand(new ECommand());
+		getCommand("ba-api").setExecutor(iCommandExecutor);
 	}
 	
 	public void scoreBoard() {

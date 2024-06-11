@@ -1,34 +1,7 @@
 name: BA-API
 description: An API that allows you to sends ActionBar and BossBar in 1.8.X
 main: me.classy.baapi.BAAPI
-version: '2.0'
+version: '2.1'
 api-version: 1.8
 commands:
-  sendtitle:
-    description: "Send a title message to one or all the player in the server."
-    usage: "/sendtitle <message> <player> OR /sendtitle <message> all"
-    aliases: st
-  sendsubtitle:
-    description: "Send a subtitle message to one or all the player in the server."
-    usage: "/sendsubtitle <message> <player> OR /sendsubtitle <message> all"
-    aliases: sst
-  togglestaffchat:
-    description: "Enable or disable staff chat"
-    usage: "/togglestaffchat OR /tsc"
-    aliases: tsc
-  staffchat:
-    description: "Used to send message in staff chat"
-    usage: "/staffchat <message> OR /sc <message>"
-    aliases: sc
-  staffinfo:
-    description: "Get info about a specific staff member"
-    usage: "/staffinfo <player> OR /info <player>"
-    aliases: info
-  staff:
-    description: "Returns with a list of online staff members"
-    usage: "/staff"
-  donttouch:
-  example:
-    description: "I made this command for example, if you want to make a command then use this for example."
-    usage: "/example <message> OR /ex <message> OR /e <message>"
-    aliases: [ex, e]
+  ba-api:

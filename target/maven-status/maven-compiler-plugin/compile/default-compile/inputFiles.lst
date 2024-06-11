@@ -1,9 +1,6 @@
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/BAAPI.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/actionbarapi/ActionBar.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/bossbarapi/BossBar.java
-/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/commands/ECommand.java
-/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/commands/SubtitleCommand.java
-/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/commands/TitleCommand.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/commandsapi/BaseCommand.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/commandsapi/Command.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/commandsapi/CommandRegistery.java
@@ -16,14 +13,6 @@
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/holo/HologramFactory.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/holo/HologramManager.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/holo/StaticHologram.java
-/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/listener/PlayerJoin.java
-/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/rank/Rank.java
-/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/rank/RankManager.java
-/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/staff/StaffChatCommand.java
-/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/staff/StaffInfoCommand.java
-/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/staff/StaffJoinLeaveEvent.java
-/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/staff/StaffListCommand.java
-/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/staff/ToggleStaffChatCommand.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/titleapi/Title.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/utility/Credit.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/utility/Util.java

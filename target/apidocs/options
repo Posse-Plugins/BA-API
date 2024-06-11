@@ -15,10 +15,10 @@
 -docencoding
 'UTF-8'
 -doctitle
-'BA-API 2.0 API'
+'BA-API 2.1 API'
 -linkoffline
 'http://docs.oracle.com/javase/7/docs/api' '/storage/emulated/0/AppProjects/BossBarAPI/target/javadoc-bundle-options'
 -use
 -version
 -windowtitle
-'BA-API 2.0 API'
+'BA-API 2.1 API'
