@@ -94,7 +94,7 @@ public class ECommand extends BaseCommand {
 ## Tested Versions
 
 * 1.8 <br>
-If you test it in other versions make a pull request.
+If you test it in other versions make a pull request. Please follow **PULL_REQUEST.md**.
 
 ## Authors
 
