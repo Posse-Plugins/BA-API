@@ -10,10 +10,13 @@ me/classy/baapi/commandsapi/ICommandExecutor.class
 me/classy/baapi/commandsapi/BaseCommand.class
 me/classy/baapi/commandsapi/Command.class
 me/classy/baapi/titleapi/Title.class
+ExampleGUI.class
 me/classy/baapi/bossbarapi/BossBar.class
 me/classy/baapi/utility/Util.class
 me/classy/baapi/holo/HologramManager.class
 me/classy/baapi/utility/Credit.class
+me/classy/baapi/api/BaAPI.class
 me/classy/baapi/gui/GUI.class
 me/classy/baapi/gui/GUIUtils.class
 me/classy/baapi/BAAPI.class
+me/classy/baapi/api/BaAPIImpl.class
