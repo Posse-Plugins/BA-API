@@ -94,7 +94,7 @@ public class ECommand extends BaseCommand {
 ## Tested Versions
 
 * 1.8 <br>
-If you test it in other versions make a pull request. Please follow **PULL_REQUEST.md**.
+If you test it in other versions make a pull request. Please check [**pull request template.**](https://github.com/Posse-Plugins/BA-API/blob/master/PULL_REQUEST_TEMPLATE.md).
 
 ## Authors
 

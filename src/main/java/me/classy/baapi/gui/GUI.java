@@ -1,6 +1,7 @@
 package me.classy.baapi.gui;
 
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Inventory;
 
 import java.util.HashMap;
@@ -23,4 +24,8 @@ public class GUI {
     public static void closeGUI(Player player) {
         openGuis.remove(player);
     }
+	
+	public static void setItem(Inventory inventory, int slot, ItemStack item) {
+		inventory.setItem(slot, item);
+	}
 }
