@@ -17,7 +17,7 @@ BossBarAPI, ActionBarAPI & TitleAPI for 1.8.X (Very Lightweight)
     <dependency>
 	<groupId>me.classy</groupId>
 	<artifactId>ba-api</artifactId>
-	<version>2.1</version>
+	<version>2.1.1</version>
     </dependency>
 </dependencies>
 ```
@@ -33,7 +33,7 @@ repositories {
 
 ```groovy
 dependencies {
-	implementation "me.classy:ba-api:2.1"
+	implementation "me.classy:ba-api:2.1.1"
 }
 ```
 
