@@ -1,0 +1,24 @@
+-classpath
+'/storage/emulated/0/AppProjects/BossBarAPI/target/classes:/data/data/com.termux/files/home/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/data/data/com.termux/files/home/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/data/data/com.termux/files/home/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/data/data/com.termux/files/home/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/data/data/com.termux/files/home/.m2/repository/org/yaml/snakeyaml/1.15/snakeyaml-1.15.jar:/data/data/com.termux/files/home/.m2/repository/net/md-5/bungeecord-chat/1.8-SNAPSHOT/bungeecord-chat-1.8-SNAPSHOT.jar:/data/data/com.termux/files/home/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/data/data/com.termux/files/home/.m2/repository/org/spigotmc/spigot/1.8.8/spigot-1.8.8.jar:/data/data/com.termux/files/home/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:/data/data/com.termux/files/home/.m2/repository/org/avaje/ebean/2.8.1/ebean-2.8.1.jar:/data/data/com.termux/files/home/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/data/data/com.termux/files/home/.m2/repository/junit/junit/4.10/junit-4.10.jar:/data/data/com.termux/files/home/.m2/repository/javax/persistence/persistence-api/1.0/persistence-api-1.0.jar:/data/data/com.termux/files/home/.m2/repository/org/spigotmc/spigot-api/1.8.8-R0.1-SNAPSHOT/spigot-api-1.8.8-R0.1-SNAPSHOT.jar:/data/data/com.termux/files/home/.m2/repository/com/google/guava/guava/17.0/guava-17.0.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/storage/emulated/0/AppProjects/BossBarAPI/src/main/java:/storage/emulated/0/AppProjects/BossBarAPI/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/storage/emulated/0/AppProjects/BossBarAPI/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'BA-API 2.2 API'
+-linkoffline
+'http://docs.oracle.com/javase/7/docs/api' '/storage/emulated/0/AppProjects/BossBarAPI/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'BA-API 2.2 API'

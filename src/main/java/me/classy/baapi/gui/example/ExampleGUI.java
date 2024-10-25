@@ -1,3 +1,5 @@
+package me.classy.baapi.gui.example;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
