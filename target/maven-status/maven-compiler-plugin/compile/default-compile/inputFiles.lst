@@ -1,13 +1,12 @@
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/BAAPI.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/actionbarapi/ActionBar.java
+/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/api/BaAPI.java
+/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/api/BaAPIImpl.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/bossbarapi/BossBar.java
-/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/commandsapi/BaseCommand.java
-/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/commandsapi/Command.java
-/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/commandsapi/CommandRegistery.java
-/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/commandsapi/ICommandExecutor.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/gui/AbstractGUI.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/gui/GUI.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/gui/GUIUtils.java
+/storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/gui/example/ExampleGUI.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/holo/AnimatedHologram.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/holo/Hologram.java
 /storage/emulated/0/AppProjects/BossBarAPI/src/main/java/me/classy/baapi/holo/HologramFactory.java
